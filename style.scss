@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&family=Raleway:wght@300;400;500&family=Silkscreen&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(120deg, #cc2b5e, #753a88);
+    font-size: 62.5%;
+}
+
+header,
+.inputContainer {
+    height: 15vh;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input,
+    button {
+        padding: 0.5rem;
+        font-size: 1rem;
+        border: none;
+        background: white;
+    }
+    input {
+        width: 30vw;
+        &:hover,
+        &:focus {
+            outline: none;
+        }
+    }
+    button {
+        color: #cc2b5e;
+        background: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:disabled,
+        &[disabled] {
+            color: #cc2b5ea8;
+        }
+        i {
+            font-size: 1.2rem;
+            // color: white;
+        }
+    }
+}
+
+header{
+    color: white;
+}
+
+.todoContainer {
+    max-width: 50%;
+    margin: 0 auto;
+    border-radius: 5px;
+    display: flex;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+    .todoList {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        flex-direction: column;
+        flex: 1;
+        padding-top: 2rem;
+        .todo {
+            margin: 0.25rem;
+            padding: 0.1rem 0.3rem;
+            font-size: 0.8rem;
+            width: 80%;
+            background-color: white;
+            color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li {
+                flex: 1;
+            }
+            button {
+                padding: 0.3em 0.7em;
+                border: none;
+                margin-left: 0.2rem;
+                cursor: pointer;
+                background-color: transparent;
+                .fa-check {
+                    color: rgb(73, 204, 73);
+                    font-size: 1rem;
+                    pointer-events: none;
+                }
+                .fa-trash {
+                    color: red;
+                    font-size: 1rem;
+                    pointer-events: none;
+                    outline: none;
+                }
+            }
+        }
+
+        .completed {
+            text-decoration: line-through;
+            opacity: 0.7;
+        }
+    }
+}
