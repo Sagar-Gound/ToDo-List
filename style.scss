@@ -42,17 +42,36 @@ header,
         transition: all 0.3s ease;
         &:disabled,
         &[disabled] {
-            color: #cc2b5ea8;
+            color: #e3668da4;
         }
         i {
             font-size: 1.2rem;
             // color: white;
         }
     }
+    .select {
+        margin-top: -7px;
+        margin-left: 1.5rem;
+        position: relative;
+        overflow: hidden;
+        select {
+            color: #ff6f47;
+            height: 2.45rem;
+            width: 8rem;
+            color: #cc2b5e;
+            padding: 0.5rem 0.5rem;
+            font-size: 0.8rem;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            
+        }
+    }
 }
 
-header{
+header {
     color: white;
+    font-size: 2.5rem;
 }
 
 .todoContainer {

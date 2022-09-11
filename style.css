@@ -50,15 +50,35 @@ header button,
 header button:disabled, header button[disabled],
 .inputContainer button:disabled,
 .inputContainer button[disabled] {
-  color: rgba(204, 43, 94, 0.6588235294);
+  color: rgba(227, 102, 141, 0.6431372549);
 }
 header button i,
 .inputContainer button i {
   font-size: 1.2rem;
 }
+header .select,
+.inputContainer .select {
+  margin-top: -7px;
+  margin-left: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+header .select select,
+.inputContainer .select select {
+  color: #ff6f47;
+  height: 2.45rem;
+  width: 8rem;
+  color: #cc2b5e;
+  padding: 0.5rem 0.5rem;
+  font-size: 0.8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
 
 header {
   color: white;
+  font-size: 2.5rem;
 }
 
 .todoContainer {

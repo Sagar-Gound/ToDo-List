@@ -19,7 +19,16 @@
 
     <div class="inputContainer">
       <input type="text" id="todoInput" />
-      <button id="addTodoBtn" disabled="disabled"><i class="fa-solid fa-square-plus" ></i></button>
+      <button id="addTodoBtn" disabled="disabled">
+        <i class="fa-solid fa-square-plus"></i>
+      </button>
+      <div class="select">
+        <select name="todos" class="filterTodos">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="uncompleted">Uncompleted</option>
+        </select>
+      </div>
     </div>
     <div class="todoContainer">
       <ul class="todoList">
